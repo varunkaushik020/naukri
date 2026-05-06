@@ -1,0 +1,35 @@
+{
+    "name": "naukri-portal-backend",
+    "version": "1.0.0",
+    "description": "Backend for Job Portal (Naukri Clone) with MFA, ATS Scoring, and RBAC",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "nodemon server.js"
+    },
+    "keywords": [
+        "job-portal",
+        "mfa",
+        "ats",
+        "rbac",
+        "mongodb"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "helmet": "^7.1.0",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.0.3",
+        "multer": "^2.1.1",
+        "nodemailer": "^6.9.7",
+        "redis": "^4.6.12",
+        "string-similarity": "^4.0.4"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.2"
+    }
+}
