@@ -1,0 +1,146 @@
+.file-upload-container {
+    margin-bottom: 1.5rem;
+}
+
+.file-upload-label {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.file-upload-area {
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+    position: relative;
+}
+
+.file-upload-area:hover {
+    border-color: #4a90e2;
+    background-color: #f0f7ff;
+}
+
+.file-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-upload-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.upload-icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.file-upload-content p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.file-types {
+    color: #999 !important;
+    font-size: 0.8rem !important;
+}
+
+.file-preview {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+.file-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.file-icon {
+    font-size: 2rem;
+}
+
+.file-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.file-name {
+    font-weight: 500;
+    color: #333;
+    font-size: 0.9rem;
+    word-break: break-all;
+}
+
+.file-size {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.remove-file-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #999;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.remove-file-btn:hover {
+    background-color: #ffebee;
+    color: #f44336;
+}
+
+.file-error {
+    color: #f44336;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+.file-help {
+    color: #666;
+    font-size: 0.8rem;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.file-upload-area.drag-active {
+    border-color: #4a90e2;
+    background-color: #e3f2fd;
+}
+
+@media (max-width: 768px) {
+    .file-upload-area {
+        padding: 1.5rem;
+    }
+
+    .upload-icon {
+        font-size: 2.5rem;
+    }
+
+    .file-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

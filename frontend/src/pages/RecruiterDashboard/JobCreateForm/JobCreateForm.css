@@ -1,0 +1,339 @@
+.job-create-form-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 32px;
+    margin: 24px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.form-header {
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid #f1f5f9;
+}
+
+.form-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 8px 0;
+    letter-spacing: -0.5px;
+}
+
+.form-header p {
+    font-size: 15px;
+    color: #64748b;
+    margin: 0;
+}
+
+.job-create-form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.form-section {
+    padding: 24px;
+    background: #f8fafc;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-icon {
+    font-size: 24px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-field.full-width {
+    grid-column: 1 / -1;
+}
+
+.input-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.required {
+    color: #ef4444;
+}
+
+.select-field {
+    padding: 12px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #1e293b;
+    background: #ffffff;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.select-field:focus {
+    outline: none;
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+}
+
+.textarea-field {
+    padding: 12px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #1e293b;
+    background: #ffffff;
+    transition: all 0.2s ease;
+    resize: vertical;
+    font-family: inherit;
+    line-height: 1.6;
+}
+
+.textarea-field:focus {
+    outline: none;
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+}
+
+.experience-inputs,
+.salary-inputs {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.experience-inputs .input-wrapper,
+.salary-inputs .input-wrapper {
+    flex: 1;
+}
+
+.separator {
+    font-size: 14px;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.skills-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.skills-input-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.skill-input-field {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #1e293b;
+    background: #ffffff;
+    transition: all 0.2s ease;
+}
+
+.skill-input-field:focus {
+    outline: none;
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+}
+
+.skill-input-field::placeholder {
+    color: #94a3b8;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 16px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    min-height: 60px;
+}
+
+.skill-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    background: linear-gradient(135deg, #0ea5e9, #06b6d4);
+    color: #ffffff;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    animation: fadeIn 0.3s ease;
+}
+
+.skill-tag:hover {
+    background: linear-gradient(135deg, #0284c7, #0891b2);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(14, 165, 233, 0.3);
+}
+
+.skill-remove-btn {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    padding: 0;
+    line-height: 1;
+}
+
+.skill-remove-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding-top: 24px;
+    border-top: 2px solid #f1f5f9;
+}
+
+.input-error-message {
+    font-size: 12px;
+    color: #ef4444;
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1024px) {
+    .job-create-form-card {
+        padding: 24px;
+    }
+
+    .form-section {
+        padding: 20px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .job-create-form-card {
+        padding: 20px;
+        margin: 16px 0;
+    }
+
+    .form-header h2 {
+        font-size: 24px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .form-section {
+        padding: 16px;
+    }
+
+    .experience-inputs,
+    .salary-inputs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .separator {
+        text-align: center;
+    }
+
+    .skills-input-wrapper {
+        flex-direction: column;
+    }
+
+    .form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+}
+
+input:disabled,
+select:disabled,
+textarea:disabled {
+    background: #f1f5f9;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.loading-text {
+    padding: 12px 16px;
+    color: #64748b;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.error-text {
+    padding: 12px 16px;
+    color: #ef4444;
+    font-size: 14px;
+    font-weight: 500;
+    background: #fee2e2;
+    border-radius: 8px;
+    border: 1px solid #fecaca;
+}
